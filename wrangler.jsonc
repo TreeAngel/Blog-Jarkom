@@ -1,0 +1,25 @@
+{
+    // Set this to the name of your project.
+    "name": "blog-jarkom",
+    // Set this to today's date in YYYY-MM-DD format.
+    "compatibility_date": "2026-10-19",
+    "build": {
+        "command": "chmod a+x build.sh && ./build.sh",
+        "environment": {
+            "HUGO_VERSION": "0.168.0",
+            "HUGO_ENVIRONMENT": "production",
+            "HUGO_ENV": "production",
+        },
+    },
+    "assets": {
+        "directory": "./public",
+        "not_found_handling": "404-page",
+    },
+    "redirects": [
+        {
+            "from": "/search",
+            "to": "/search/",
+            "status": 301,
+        },
+    ],
+}
