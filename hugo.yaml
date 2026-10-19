@@ -1,4 +1,4 @@
-baseURL: "https://blog-jarkom-kelompok-3.pages.dev/"
+baseURL: "https://blog-jarkom.nadhifmusyafa23.workers.dev/"
 locale: "id-ID"
 title: "Blog Jarkom Kelompok 3"
 paginate: 5
@@ -132,9 +132,9 @@ params:
     Title: "Selamat Datang!"
     Content: "Blog ini berisi kumpulan artikel tugas mata kuliah Jaringan Komputer yang dibuat oleh Kelompok 3. Temukan pembahasan topologi jaringan, protokol, keamanan jaringan, dan berbagai topik menarik lainnya."
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/"   # ganti dengan URL repo kelompok
+  # socialIcons:
+  #   - name: github
+  #     url: "https://github.com/"   # ganti dengan URL repo kelompok
 
   # Konfigurasi pencarian (Fuse.js)
   fuseOpts:
