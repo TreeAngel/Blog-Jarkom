@@ -11,138 +11,138 @@ buildExpired: false
 
 # Minifikasi output HTML/CSS/JS/JSON/XML
 minify:
-  disableXML: true
-  minifyOutput: true
+    disableXML: true
+    minifyOutput: true
 
 # Output format: JSON diperlukan untuk fitur pencarian (Fuse.js)
 outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+    home:
+        - HTML
+        - RSS
+        - JSON
 
 # ---------------------------------------------------------------------------
 # Konfigurasi markup & syntax highlighting (Chroma)
 # ---------------------------------------------------------------------------
 pygmentsUseClasses: true
 markup:
-  highlight:
-    noClasses: false
-    codeFences: true
-    guessSyntax: true
-    lineNos: false
-    style: monokai
-  goldmark:
-    renderer:
-      unsafe: true   # izinkan HTML mentah di dalam konten Markdown
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        style: monokai
+    goldmark:
+        renderer:
+            unsafe: true # izinkan HTML mentah di dalam konten Markdown
 
 # ---------------------------------------------------------------------------
 # Pipeline gambar Hugo (digunakan oleh shortcode image & cover PaperMod)
 # ---------------------------------------------------------------------------
 imaging:
-  resampleFilter: Lanczos
-  anchor: Smart
-  bgColor: "#ffffff"
-  jpeg:
-    quality: 85
-  webp:
-    quality: 85
-    hint: photo
-  avif:
-    quality: 75
+    resampleFilter: Lanczos
+    anchor: Smart
+    bgColor: "#ffffff"
+    jpeg:
+        quality: 85
+    webp:
+        quality: 85
+        hint: photo
+    avif:
+        quality: 75
 
 # ---------------------------------------------------------------------------
 # Menu navigasi
 # ---------------------------------------------------------------------------
 menu:
-  main:
-    - identifier: home
-      name: Beranda
-      url: /
-      weight: 1
-    - identifier: posts
-      name: Artikel
-      url: /posts/
-      weight: 2
-    - identifier: categories
-      name: Kategori
-      url: /categories/
-      weight: 3
-    - identifier: tags
-      name: Tag
-      url: /tags/
-      weight: 4
-    - identifier: search
-      name: Cari
-      url: /search/
-      weight: 5
+    main:
+        - identifier: home
+          name: Beranda
+          url: /
+          weight: 1
+        - identifier: posts
+          name: Artikel
+          url: /artikel/
+          weight: 2
+        - identifier: categories
+          name: Kategori
+          url: /kategori/
+          weight: 3
+        - identifier: tags
+          name: Tag
+          url: /tag/
+          weight: 4
+        - identifier: search
+          name: Cari
+          url: /search/
+          weight: 5
 
 # ---------------------------------------------------------------------------
 # Parameter PaperMod
 # ---------------------------------------------------------------------------
 params:
-  env: production   # aktifkan OpenGraph, Twitter Cards, Schema.org
-  title: "Blog Jarkom Kelompok 3"
-  description: "Blog tugas mata kuliah Jaringan Komputer — Kelompok 3. Berisi artikel seputar konsep dan teknologi jaringan komputer."
-  keywords: [Blog, Jaringan Komputer, Networking, Kelompok 3]
-  author: "Kelompok 3"
-  images: ["/images/og-default.png"]   # Open Graph default image (letakkan di static/images/)
-  DateFormat: "02 January 2006"
-  defaultTheme: auto   # auto | dark | light
-  disableThemeToggle: false
+    env: production # aktifkan OpenGraph, Twitter Cards, Schema.org
+    title: "Blog Jarkom Kelompok 3"
+    description: "Blog tugas mata kuliah Jaringan Komputer — Kelompok 3. Berisi artikel seputar konsep dan teknologi jaringan komputer."
+    keywords: [Blog, Jaringan Komputer, Networking, Kelompok 3]
+    author: "Kelompok 3"
+    images: ["/images/og-default.png"] # Open Graph default image (letakkan di static/images/)
+    DateFormat: "02 January 2006"
+    defaultTheme: auto # auto | dark | light
+    disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowWordCount: true
+    ShowRssButtonInSectionTermList: false
+    UseHugoToc: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
 
-  # Favicon – letakkan file di static/
-  assets:
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "/safari-pinned-tab.svg"
+    # Favicon – letakkan file di static/
+    assets:
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
+        safari_pinned_tab: "/safari-pinned-tab.svg"
 
-  label:
-    text: "Blog Jarkom Kelompok 3"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    label:
+        text: "Blog Jarkom Kelompok 3"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
 
-  # Cover image global (per-post bisa override di front matter)
-  cover:
-    hidden: false
-    hiddenInList: false
-    hiddenInSingle: false
-    linkFullImages: true   # klik gambar membuka versi penuh
+    # Cover image global (per-post bisa override di front matter)
+    cover:
+        hidden: false
+        hiddenInList: false
+        hiddenInSingle: false
+        linkFullImages: true # klik gambar membuka versi penuh
 
-  # Home info (mode default - bukan profileMode)
-  homeInfoParams:
-    Title: "Selamat Datang!"
-    Content: "Blog ini berisi kumpulan artikel tugas mata kuliah Jaringan Komputer yang dibuat oleh Kelompok 3. Temukan pembahasan topologi jaringan, protokol, keamanan jaringan, dan berbagai topik menarik lainnya."
+    # Home info (mode default - bukan profileMode)
+    homeInfoParams:
+        Title: "Selamat Datang!"
+        Content: "Blog ini berisi kumpulan artikel tugas mata kuliah Jaringan Komputer yang dibuat oleh Kelompok 3. Temukan pembahasan topologi jaringan, protokol, keamanan jaringan, dan berbagai topik menarik lainnya."
 
-  # socialIcons:
-  #   - name: github
-  #     url: "https://github.com/"   # ganti dengan URL repo kelompok
+    # socialIcons:
+    #   - name: github
+    #     url: "https://github.com/"   # ganti dengan URL repo kelompok
 
-  # Konfigurasi pencarian (Fuse.js)
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 2
-    limit: 10
-    keys: ["title", "permalink", "summary", "content"]
+    # Konfigurasi pencarian (Fuse.js)
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 2
+        limit: 10
+        keys: ["title", "permalink", "summary", "content"]
