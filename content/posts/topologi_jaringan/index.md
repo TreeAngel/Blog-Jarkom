@@ -39,7 +39,7 @@ Tidak ada satu topologi yang selalu menjadi pilihan terbaik untuk semua kondisi.
 
 ## 3. Klasifikasi Topologi Jaringan
 
-Berdasarkan materi perkuliahan, topologi jaringan dapat diklasifikasikan menjadi dua jenis utama.
+Topologi jaringan dapat diklasifikasikan menjadi dua jenis utama.
 
 ### A. Physical Topology
 
@@ -133,14 +133,6 @@ Data dapat dikirim melalui jalur yang tersedia untuk mencapai perangkat tujuan. 
 - Biaya pembangunan relatif mahal.
 - Pengelolaan jaringan dapat menjadi kompleks ketika jumlah perangkat bertambah.
 
-Jika terdapat `n` perangkat dalam Full Mesh, jumlah koneksi langsung yang diperlukan adalah:
-
-\[
-\frac{n(n-1)}{2}
-\]
-
-Artinya, semakin banyak perangkat, semakin banyak koneksi yang diperlukan.
-
 **Contoh penggunaan:** Koneksi antarrouter pada jaringan perusahaan, infrastruktur penyedia layanan internet, dan jaringan yang membutuhkan jalur komunikasi cadangan.
 
 ### D. Topologi Bus
@@ -172,7 +164,7 @@ Topologi Bus kini jarang digunakan untuk LAN modern karena keterbatasan performa
 
 ### E. Topologi Star
 
-![Diagram Topologi Star](Star_Topologi.jpg)
+![Diagram Topologi Star](Star_Topology.jpg)
 
 Topologi Star atau bintang adalah topologi jaringan yang menghubungkan setiap perangkat ke satu perangkat pusat, biasanya switch.
 
