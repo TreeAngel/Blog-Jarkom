@@ -34,7 +34,7 @@ Di front matter index.md:
 ### Menyisipkan Gambar di Dalam Artikel
 
 Sintaks Markdown:
-  ![Alt text](nama-gambar.png)
+  "![Alt text](nama-gambar.png)"
 
 Atau shortcode Hugo:
   {{< figure src="nama-gambar.png" alt="Alt text" caption="Keterangan" >}}
